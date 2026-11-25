@@ -21,3 +21,21 @@ function data(name,weight){
 let one=data("sajjad",57);
 let totaldata=one("6'1");
 console.log(totaldata);
+
+function add(a,b) {
+    console.log(`sum is ${a+b}`);
+}
+
+function level(adding) {
+    adding(2,3);
+}
+level(add);
+
+function me(name) {
+    return function me1(age) {
+        return `about me ${name},${age}`
+    }
+}
+let me2=me("sajjad")
+let info=me2(23)
+console.log(info)
