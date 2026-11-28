@@ -3,34 +3,112 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>dom fun</title>
+    <title>Document</title>
     <script src="scripts.js" defer></script>
     <style>
         body{
             background: black;
+            color: white;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             min-height: 100vh;
-            color: white;
         }
         .highlight{
-            background: yellow;
-            color: blue;
+            background: yellowgreen;
+            color: white;
         }
+        .change{
+            background: paleturquoise;
+            padding: 4px;
+            border-radius: 10px;
+        }
+        .active{
+            background-color: chartreuse;
+            color: brown;
+        }
+
     </style>
 </head>
 <body>
-    <p>this p got changed when i click button</p>
-    <button type="submit">change me</button>
-    <section>
-        <ul class="highlight">
-            <li>lahore</li>
-            <li>jhelum</li>
-            <li>hafizabad</li>
-            <button class="hi">highlight</button>
+    <!-- example 1 -->
+     <!-- select event manipulate -->
+     <h1>select event manipulate</h1>
+     <section>
+        <p id="paragraph">This content is changes when i click button</p>
+        <button id="btn"   type="submit">change text</button>
+     </section>
+     <!-- example 2 -->
+      <!-- Traversing the DOM -->
+      <h2> Traversing the dom</h2>
+      <section>
+        <ul id="unorder">
+            <li class="list">france</li>
+            <li class="list">uk</li>
+            <li class="list">canada</li>
         </ul>
-    </section>
+        <button id="btnn">change</button>
+      </section>
+      <!-- example 3 -->
+       <h2>manipulating the element</h2>
+       <section>
+        <span id="l">latte</span>
+        <button id="b">change order</button>
+       </section>
+       <!-- example 4 -->
+      <h2>creating element</h2>
+      <section>
+        <ul id="ad">
+            <li class="li">eggs</li>
+            <li class="li">bread</li>
+        </ul>
+        <button id="addbtn">Add item</button>
+      </section>
+      <!-- example 5 -->
+       <h2>deleting element</h2>
+      <section>
+        <ul id="a">
+            <li class="li">eggs</li>
+            <li class="li">bread</li>
+            <li class="li">biscuit</li>
+        </ul>
+        <button id="addbt">delete item</button>
+      </section>
+      <!-- example 6 -->
+       <h2>event handling</h2>
+       <section>
+        <button id="click">click me</button>
+       </section>
+       <!-- example 7 -->
+        <h2>event delegation</h2>
+        <section>
+        <ul id="teatype">
+            <li class="tea">greentea</li>
+            <li class="tea">oolong</li>
+            <li class="tea">pishawri tea</li>
+        </ul> 
+      </section>
+      <!-- example 8 -->
+       <h2>form handling</h2>
+       <section>
+        <form id="selectform">
+            <input id="h" type="text">
+            <button id="selectbtn">submit</button>
+        </form>
+        
+        <p id="pargraph"></p>
+       </section>
+       <!-- example 9 -->
+       <h2>dom content loaded</h2>
+       <section>
+        <p id="mm">dom content is being load</p>
+       </section>
+       <!-- example 10 -->
+        <h2>togle</h2>
+        <section>
+            <p id="ss">this is sajjad ali</p>
+            <button id="pp">toggle me</button>
+        </section>
 </body>
 </html>
